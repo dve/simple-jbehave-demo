@@ -14,9 +14,12 @@ import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
+import org.junit.runner.RunWith;
 
+import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import net.vergien.jbehave.demo.simple.steps.StackSteps;
 
+@RunWith(JUnitReportingRunner.class)
 public class StackStories extends JUnitStories {
 	// Here we specify the configuration, starting from default
 	// MostUsefulConfiguration, and changing only what is needed

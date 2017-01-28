@@ -7,8 +7,8 @@
 	<properties>
 		<jbehave.core.version>4.1</jbehave.core.version>
 		<jbehave.site.version>3.3</jbehave.site.version>
-		<!-- Set to false if you want failing tests to break your build -->				
-		<ignore.failures>true</ignore.failures>		
+		<!-- Set to false if you want failing tests to break your build -->
+		<ignore.failures>true</ignore.failures>
 	</properties>
 
 	<dependencies>
@@ -17,10 +17,16 @@
 			<artifactId>jbehave-core</artifactId>
 			<version>${jbehave.core.version}</version>
 		</dependency>
+		<!-- Used for nicer ide integration -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>jbehave-junit-runner</artifactId>
+			<version>1.2.0</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.4</version>
+			<version>4.12</version>
 		</dependency>
 	</dependencies>
 
